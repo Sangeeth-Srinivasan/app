@@ -16,9 +16,9 @@ CLASS_NAMES = ['banana_pack', 'banana_unpack', 'capsicum_pack', 'capsicum_unpack
 @st.cache_resource
 def load_ml_models():
     return {
-        "KNN": joblib.load("knn.pkl"),
+        "KNN": joblib.load("decision_tree.pkl"),
         "Naive Bayes": joblib.load("naive_bayes.pkl"),
-        "Random Forest": joblib.load("random_forest.pkl"),
+        "Random Forest": joblib.load("logistic_regression.pkl"),
     }
 
 @st.cache_resource
